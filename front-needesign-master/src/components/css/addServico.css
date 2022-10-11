@@ -1,0 +1,239 @@
+::placeholder {
+    color: #214abbc9;
+    font-weight: lighter;
+}
+.input-date{
+    color: var(--secundaria);
+    text-align: left;
+    width: 400px;
+    border-radius: 10px;
+    border: solid 3px var(--secundaria);
+    background: none;
+    padding: 10px;
+    margin-top: 15px;
+    color: var(--secundaria);
+}
+.input-date::placeholder{
+    color: var(--secundaria);
+}
+
+.input-date:focus{
+    border-color: var(--secundaria);
+    outline: none;
+}
+
+.add-serv-plus {
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.bodyServico {
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+span.sm.addServ {
+    color: var(--secundaria);
+    font-size: 18px;
+}
+
+.center-just.addServ {
+    text-align: justify;
+    margin: 0 auto;
+    width: 25em;
+}
+
+h1.addServ {
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 5%;
+    color: var(--cor-primaria);
+}
+
+h2.addServ {
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 5%;
+    color: var(--cor-primaria);
+}
+
+h3.addServ {
+    font-size: 18px;
+}
+
+.seta.addServ {
+    z-index: 1;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+a.entrar.addServ {
+    margin-top: 20px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.input.addServ {
+    color: var(--secundaria);
+    text-align: left;
+    width: 400px;
+    border-radius: 10px;
+    border: solid 2px var(--secundaria);
+    background: none;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+input.desc.addServ {
+    padding-bottom: 150px;
+}
+
+.input.addServ:focus {
+    outline: none;
+}
+
+.input.addServ.image {
+    background-color: white;
+}
+
+.container.addServ {
+    height: 100%;
+}
+
+.bg.addServ {
+    background-color: white;
+    border-radius: 35px 35px 35px 35px;
+    height: 100%;
+    width: 900px;
+    padding: 10px;
+}
+
+.center-block.addServ {
+    text-align: center;
+}
+
+hr.barra.addServ {
+    width: 400px;
+    border: 3px solid var(--cinza);
+    opacity: 20%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.button.addServ {
+    margin-top: 10px;
+    border: none;
+    font-size: 20px;
+    /*     Top  Right  bottom  left */
+    padding: 10px 80px 10px 80px;
+    text-align: center;
+    color: white;
+    background-color: var(--cor-primaria);
+    border-radius: 15px;
+    width: 330px;
+}
+
+.blocos input.addServ {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+div.left{
+    text-align: left;
+}
+.blocos.addServ {
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: 200;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input.checkbox.addServ {
+    accent-color: var(--cor-primaria);
+    padding-top: 1px;
+    vertical-align: middle;
+    text-align: left;
+    position: relative;
+    display: inline;
+    height: 22px;
+    width: 22px;
+    background-color: none;
+    border: 3px solid var(--cor-primaria);
+    border-radius: 10px;
+}
+
+.button a.addServ {
+    color: white;
+}
+
+.button a.addServ:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+/* media */
+
+@media (max-width: 650px) {
+    h1.addServ {
+        font-size: 28px;
+    }
+    .input.addServ {
+        width: 380px;
+    }
+    .button.addServ {
+        width: 250px;
+        padding: 10px 60px 10px 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    h1.addServ {
+        font-size: 24px;
+    }
+    .input.addServ {
+        width: 305px;
+    }
+    .button.addServ {
+        width: 250px;
+        padding: 10px 50px 10px 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg.addServ {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .container.addServ {
+        width: 540px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .input.addServ {
+        width: 400px;
+    }
+}

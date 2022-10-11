@@ -1,0 +1,358 @@
+:root {
+    --cor-primaria: #2149BB;
+    --inative: #ECECEC;
+    --secundaria: #6385E3;
+    --alerta: #F5953C;
+    --chat: #3BB6EB;
+    --branco: #ffffff;
+    --cinza: #C4C4C4;
+    --bg: #2149BB;
+    --ativo: #203b88;
+    --blob: #F5C23C;
+    --preto: rgba(46, 46, 46, 0.753);
+}
+
+.loader {
+    margin-left: 8px;
+    margin-top: 4px;
+    position: absolute;
+    border: 2px solid #f3f3f3af; /* Light grey */
+    border-top: 3px solid #ffffff; /* Blue */
+    border-radius: 50%;
+    display: none;
+    width: 20px;
+    height: 20px;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--branco);
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+a.desfiltrar {
+    width: auto;
+    margin-left: 220px;
+    margin-top: 35px;
+    position: absolute;
+    font-size: 16px;
+    color: var(--branco);
+    transition: all 0.1s ease-in;
+}
+
+a.desfiltrar:hover {
+    text-decoration: none;
+    color: var(--blob);
+}
+
+.btn-filter {
+    background-color: var(--blob);
+}
+
+.btn-filter:hover {
+    background-color: #ffc83e;
+}
+
+.busc-filter {
+    display: inline;
+    font-size: 20px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: solid 3px var(--blob);
+    color: var(--branco);
+    border-radius: 1px;
+    padding: 0;
+    padding-left: 5px;
+    width: 200px;
+}
+.busc-filter::placeholder{
+    color: white;
+}
+
+.busc-filter:focus {
+    outline: none;
+}
+
+.filter-icon {
+    margin-top: 34px;
+    font-size: 18px;
+    z-index: 1;
+    color: var(--blob);
+    position: absolute;
+}
+
+.navbar {
+    align-content: center;
+    background-color: var(--branco);
+    justify-content: inherit;
+}
+
+.navbar-light {
+    background-color: var(--branco);
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.navbar-brand h3 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-link h3 {
+    color: var(--cor-primaria);
+    font-size: 1.6rem;
+    justify-self: left;
+    transition: 0.2s;
+}
+
+.nav-link h3:hover {
+    font-size: 1.7rem;
+    color: var(--ativo);
+}
+
+.hamburguer {
+    text-align: right;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 0;
+    color: var(--cor-primaria);
+    font-size: 32px;
+    margin-left: 80%;
+    display: none;
+    vertical-align: middle;
+}
+
+.hamburguer:focus {
+    outline: none;
+}
+
+.nav-name {
+    justify-self: flex-end;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-self: center;
+    display: inline-block;
+}
+
+.nav-name h2:hover {
+    font-size: 150%;
+    color: var(--ativo);
+}
+
+.nav-name h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.dropdown-menu h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.dropdown-menu h3 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+span.noti {
+    color: var(--branco);
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: var(--alerta);
+    font-size: 14px;
+    border-radius: 100%;
+}
+
+.nav-name i {
+    vertical-align: middle;
+    display: inline;
+}
+
+.nav-name:hover {
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.nav-foto {
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-icone i {
+    display: inline;
+    margin-left: 15px;
+    font-size: 30px;
+    color: var(--cor-primaria);
+}
+
+.nav-icone i:hover {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.active h3 {
+    text-decoration: underline;
+}
+
+.dropdrown-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.dropdrown-text:hover {
+    color: var(--cor-primaria);
+}
+
+.dropdown-menu {
+    background-color: var(--branco);
+    padding-bottom: 20px;
+    width: 250px;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+}
+
+.button-drop {
+    border: 2px solid var(--branco);
+    font-size: 16px;
+    /*     Top  Right  bottom  left */
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    color: var(--branco);
+    margin-top: 15px;
+    margin-left: 30px;
+    background-color: var(--cor-primaria);
+    border-radius: 50px;
+    width: 180px;
+    transition: all 0.1s ease-in;
+}
+
+.button-drop a {
+    color: var(--branco);
+}
+
+.button-drop:hover {
+    background-color: var(--branco) !important;
+    text-decoration: none !important;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria) !important;
+}
+
+.center-block {
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--branco);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--branco);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor-primaria);
+    border-radius: 15px;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.overflow-clip {
+    overflow: clip;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-element {
+        display: none;
+    }
+    .nav-element.show {
+        display: block;
+    }
+    .hamburguer {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .hamburguer {
+        margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hamburguer {
+        margin-left: 60%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hamburguer {
+        margin-left: 50%;
+    }
+}
+
+@media screen and (max-width: 255px) {
+    .hamburguer {
+        margin-left: 40%;
+    }
+}

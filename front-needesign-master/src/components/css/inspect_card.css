@@ -1,0 +1,119 @@
+.nomeProposta {
+    font-size: 2.9rem;
+    font-family: 'Montserrat';
+}
+
+.jobHr {
+    width: 50%;
+    height: 3px;
+}
+
+.jobImage {
+    border-radius: 20px;
+}
+
+p.descricao {
+    font-size: 16px;
+    font-weight: 100;
+    text-align: justify;
+    padding: 8px;
+    border-radius: 5px;
+    border-bottom: 3px solid var(--secundaria);
+}
+
+.serv_autor {
+    font-size: 16px;
+    background-color: rgb(240, 240, 240);
+    padding: 8px;
+    width: 35%;
+    height: 15%;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.2); 
+    box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.2);
+}
+
+.serv_imgPerf{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.serv_prazo{
+    background-color: var(--blob);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+.serv_nomeAutor {
+    margin-left: 8px;
+    font-weight: 600;
+    color: var(--secundaria);
+}
+
+.tagProposta {
+    color: var(--blob);
+}
+
+.tarefaHeader {
+    padding-bottom: 5%;
+}
+
+.jobContainer {
+    border-radius: 30px 30px 30px 30px;
+    transform: translateY(-50px);
+    padding: 30px 30px 100px;
+    background-color: white;
+    max-width: 60vw;
+    -webkit-box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.24);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.requerimentos {
+    font-size: 1.8rem;
+}
+
+.col-12 p {
+    color: black;
+}
+
+.detalhesJob {
+    background-color: rgb(255, 255, 255);
+}
+
+.cliente {
+    color: white;
+    font-weight: 200;
+    background-color: var(--cor-primaria);
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.prazo {
+    color: white;
+    font-weight: 200;
+    background-color: var(--blob);
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .jobContainer {
+        max-width: 80vw;
+    }
+    :root {
+        font-size: 14px;
+    }
+    p.descricao {
+        font-size: 16px;
+    }
+    .nomeProposta {
+        margin-top: 20px;
+    }
+}

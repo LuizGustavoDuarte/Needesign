@@ -1,0 +1,94 @@
+body {
+    overflow-x: hidden;
+}
+
+
+d-block.mt-3 {
+    display: block;
+    margin-left: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+
+#bom-dia {
+    font-weight: 900;
+    font-family: "Montserrat";
+    font-size: 2.8rem;
+    margin-top: 50px;
+}
+
+.exit{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.card-title {
+    font-family: 'Montserrat';
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 35px;
+    justify-self: center;
+}
+
+.card-img-top {
+    border-radius: 35px 35px 0 0;
+}
+
+p {
+    color: var(--cor-primaria);
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.categoria {
+    background-color: var(--cor-primaria);
+    color: white;
+    border-radius: 30px;
+    padding: 5px 8px;
+}
+
+.container.feed {
+    margin-top: 40px;
+}
+
+.container.feed .row {
+    justify-content: space-between;
+}
+
+.container.feed .row .card {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.star {
+    color: var(--secundaria);
+    font-size: 18px;
+}
+.blob {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    z-index: -1;
+}
+
+.card-profile-photo {
+    display: inline;
+}
+
+.card-body {
+    position: relative;
+}
+
+@media screen and (max-width: 775px) {
+    
+}

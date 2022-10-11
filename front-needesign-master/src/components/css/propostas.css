@@ -1,0 +1,146 @@
+a {
+    color: white;
+    text-decoration: underline;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#bom-dia {
+    font-weight: 900;
+    font-family: "Montserrat";
+    font-size: 2.8rem;
+    margin-top: 50px;
+}
+
+.dropdown-filter-hidden {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+}
+
+.dropdown-filter {
+    position: absolute;
+    opacity: 100;
+    background: rgba( 255, 255, 255, 0.60);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 3.0px);
+    -webkit-backdrop-filter: blur( 3.0px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    z-index: 5;
+    height: 200px;
+    width: 220px;
+    border-radius: 5px;
+    color: var(--cor-primaria);
+    list-style-type: none;
+}
+
+.dropdown-filter li a {
+    z-index: 5;
+    color: var(--cor-primaria);
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    transition: 0.15s;
+    border-bottom: 0;
+}
+
+.dropdown-filter a:hover {
+    color: var(--ativo);
+    font-size: 18px;
+    font-weight: 900;
+    border-bottom: solid 2px var(--ativo);
+}
+
+.exit {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.card-title {
+    font-family: 'Montserrat';
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 15px;
+    justify-self: center;
+    z-index: 0;
+    height: 450px;
+    width: 350px;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+    height: 45%;
+}
+
+p {
+    color: var(--cor-primaria);
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.card-text {
+    text-align: justify;
+    height: 65%;
+    font-size: 18px;
+}
+
+.categoria {
+    vertical-align: bottom;
+    background-color: var(--cor-primaria);
+    color: white;
+    border-radius: 30px;
+    padding: 5px 8px;
+}
+
+.container.feed {
+    margin-top: 40px;
+}
+
+.container.feed .row {
+    justify-content: normal;
+}
+
+.container.feed .row .card {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.blob {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    z-index: -1;
+}
+
+.nav-icone {
+    margin-left: auto;
+}
+
+h6.categoria {
+    display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+    .col-md-4 {
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .col-md-4 {
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 300px;
+    }
+    .col-md-4 {
+        margin-left: 10px;
+    }
+}

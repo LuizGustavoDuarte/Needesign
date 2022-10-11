@@ -1,0 +1,91 @@
+.PortImage {
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.perf_container {
+    border-radius: 20px;
+    transform: translateY(-50px);
+    padding: 30px 30px 100px;
+    background-color: white;
+    max-width: 80vw;
+    -webkit-box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 5px 9px 5px rgba(0, 0, 0, 0.24);
+}
+
+.perfilHeader {
+    padding-bottom: 6%;
+}
+
+.perf_imgPerf {
+    width: 120px;
+    height: 120px;
+    transform: translateY(-60px);
+    border-radius: 100%;
+    object-fit: cover;
+    outline: 4px solid var(--secundaria);
+    outline-offset: 3px;
+}
+
+.perf_nome {
+    display: inline;
+    margin-left: 20px;
+    color: var(--secundaria);
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    transform: translateY(-20px);
+}
+
+.perf_ava {
+    letter-spacing: 3px;
+    color: var(--blob);
+    display: inline;
+    margin-left: 20px;
+    font-size: 24px;
+    position: absolute;
+    transform: translateY(15px);
+}
+
+.bio {
+    margin-top: -20px;
+    margin-left: 5px;
+}
+
+.bio_titulo {
+    font-size: 20px;
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+p.biografia {
+    color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+.bio_link a {
+    color: var(--secundaria);
+    transition: all 0.2s ease-in-out;
+}
+
+.bio_link a:hover {
+    color: var(--ativo);
+    text-decoration: underline;
+}
+
+.port_galery{
+    margin-top: 25px;
+}
+.port_galery div.col-4{
+    margin-bottom: 50px;
+}
+
+.perf_area{
+    color: white;
+    background-color: var(--secundaria);
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 7px;
+}

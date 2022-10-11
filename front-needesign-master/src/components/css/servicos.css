@@ -1,0 +1,116 @@
+body {
+    font-family: "Montserrat";
+}
+
+a {
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#bom-dia {
+    font-weight: 900;
+    font-family: "Montserrat";
+    font-size: 54px;
+    margin-top: 50px;
+}
+
+.exit {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.card h1.servicos {
+    margin-top: 10px;
+    font-size: 24px;
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+.card.servicos {
+    padding: 10px;
+    border-radius: 15px;
+    justify-self: center;
+    background-color: white;
+    width: 700px;
+    height: auto;
+}
+
+
+
+.button_serv:hover {
+    text-decoration: none !important;
+    background-color: #2857d8;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.button_serv {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    /*     Top  Right  bottom  left */
+    padding: 10px 80px 10px 80px;
+    text-align: center;
+    color: white;
+    background-color: var(--cor-primaria);
+    border-radius: 15px;
+    width: 330px;
+    margin-top: 30px;
+    margin-bottom: 30px !important;
+    transition: ease-in 200ms;
+    color: white;
+}
+
+.serv-req {
+    
+    text-align: center;
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--cor-primaria);
+}
+
+p.card-text {
+    color: var(--secundaria);
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.container.feed {
+    margin-top: 40px;
+}
+
+.button {
+    border: none;
+    font-size: 18px;
+    /*     Top  Right  bottom  left */
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    color: white;
+    background-color: var(--cor-primaria);
+    border-radius: 50px;
+    width: 250px;
+}
+
+.button a {
+    color: white;
+}
+
+.button a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.blob {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    z-index: -1;
+}
+
+@media screen and (max-width: 775px) {}

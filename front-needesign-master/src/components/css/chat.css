@@ -1,0 +1,254 @@
+
+
+.chat-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.chat-sidebar {
+    z-index: 1;
+    box-shadow: 6px 1px 17px -2px rgba(0, 0, 0, 0.31);
+    padding: 10px;
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    background-color: var(--cor-primaria);
+    overflow-x: hidden;
+}
+
+.chat-seta {
+    position: relative;
+    display: inline;
+    margin-right: 100%;
+    text-align: left;
+}
+
+.chat-title {
+    text-align: center;
+    font-weight: 300;
+    font-size: 28px;
+    margin-top: -40px;
+}
+
+.chat-profile {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 180px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.chat-img1 {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    text-align: right;
+    object-fit: cover;
+}
+
+.chat-img2 {
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    text-align: right;
+    object-fit: cover;
+}
+
+h2.chat-sb-name {
+    margin-left: 10px;
+    font-weight: 700;
+    vertical-align: middle;
+    display: inline;
+    font-size: 20px;
+    color: var(--cor-primaria);
+}
+
+span.chat-sb-time {
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgb(146, 146, 146);
+    display:block;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 20%;
+}
+
+hr.chat-barra {
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 1px solid rgb(196, 196, 196);
+}
+
+p.chat-sb-text {
+    margin-top: 15px;
+    display: block;
+    font-size: 14px;
+    text-align: justify;
+    color: var(--preto);
+    max-lines: 4;
+}
+
+.chat-area {
+    padding: 10px;
+    margin-left: 20%;
+    background-color: white;
+}
+
+.chat-bottom{
+    position: fixed;
+    bottom: 0;
+    width: 75%;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    width: 100%;
+    color: var(--cor-primaria);
+    border: 2.5px solid var(--cor-primaria);
+    background: white;
+}
+
+.chat-input:focus{
+    outline: none;
+}
+
+.chat-input::placeholder{
+    color: var(--cor-primaria);
+}
+
+.chat-input-btn{
+    position: absolute;
+    width: 100px;
+    height: 65px;
+    text-align: center;
+    right: 0;
+    margin-right: 0%;
+    font-size: 32px;
+    padding-right: 5px;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    border: none;
+    background-color: var(--cor-primaria);
+}
+
+.chat-profile-bar {
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    -webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.46);
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.46);
+}
+
+a.chat-info {
+    font-size: 20px;
+    color: var(--cor-primaria);
+    display: inline-block;
+    margin-left: 80%;
+}
+
+h2.chat-name {
+    margin-left: 10px;
+    font-weight: 700;
+    vertical-align: middle;
+    display: inline;
+    font-size: 22px;
+    color: var(--cor-primaria);
+}
+
+.chat-msg-other{
+    z-index: 0;
+    margin-left: 20px;
+    background-color: var(--chat);
+    padding: 10px;
+    bottom: 0;
+    margin-bottom: 25px;
+    min-width: 30%;
+    max-width: 60%;
+    border-radius: 10px;
+
+
+}
+
+.chat-feed {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.chat-msg-other p{
+    color: white !important;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.chat-msg-user{
+    z-index: 0;
+    margin-left: auto;
+    margin-right: 5%;
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    bottom: 0;
+    margin-bottom: 25px;
+    min-width: 30%;
+    max-width: 60%;
+    border-radius: 10px;
+
+}
+
+.chat-msg-user p{
+    color: white !important;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+#scrollable-sidebar {
+    overflow-y: scroll;
+}
+
+@media (max-width: 1390px) {
+    .chat-img1 {
+        width: 50px;
+        height: 50px;
+    }
+    h2.chat-sb-name {
+        font-size: 18px;
+    }
+    p.chat-sb-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .chat-img1 {
+        width: 44px;
+        height: 44px;
+    }
+    h2.chat-sb-name {
+        font-size: 16px;
+    }
+    p.chat-sb-text {
+        font-size: 12px;
+    }
+    span.chat-sb-time {
+        display: block;
+        margin-left: 25%;
+    }
+    .chat-title {
+        font-size: 22px;
+    }
+}
